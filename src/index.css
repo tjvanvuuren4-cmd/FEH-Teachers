@@ -1,0 +1,38 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, Arial, sans-serif;
+  background: radial-gradient(circle at top left, rgba(255, 221, 87, 0.12), transparent 25%),
+    linear-gradient(135deg, #071229 0%, #13286e 45%, #223d8f 100%);
+  color: #eef2ff;
+  background-attachment: fixed;
+}
+
+.section-accent-line {
+  position: relative;
+}
+
+.section-accent-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 5rem;
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, rgba(251,191,36,0.95), rgba(249,115,22,0.95));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
