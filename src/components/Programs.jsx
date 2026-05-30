@@ -178,7 +178,7 @@ export default function Programs({ whatsappUrl }) {
                 rel="noreferrer"
                 className="mt-10 inline-block w-full rounded-2xl border border-yellow-400/30 bg-[#06152d]/90 px-6 py-5 text-center font-bold uppercase tracking-[0.16em] text-yellow-300 transition-all duration-300 hover:border-yellow-300 hover:bg-[#0b2148] hover:shadow-[0_0_40px_rgba(250,204,21,0.15)]"
               >
-                Ask About This Program
+                Book Strategy Session
               </a>
             </div>
           ))}
