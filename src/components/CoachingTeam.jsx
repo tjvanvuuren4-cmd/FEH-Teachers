@@ -49,9 +49,10 @@ export default function CoachingTeam() {
               {/* IMAGE */}
               <div>
                 <img
-                  src="/images/tj-coach.webp"
-                  alt="TJ Van Vuuren"
-                  className="h-full w-full object-cover"
+                   src="/images/tj-coach.webp"
+                   alt="TJ Van Vuuren"
+                  className="w-full rounded-[2rem] object-cover
+                  border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.35)]"
                 />
               </div>
 
@@ -72,7 +73,7 @@ export default function CoachingTeam() {
                 <div className="mt-6 h-px w-24 bg-gradient-to-r from-yellow-500 to-transparent" />
 
                 <p className="mt-8 text-lg leading-8 text-slate-300">
-                  Combining experience in education, business and engineering, TJ helps professionals develop the confidence, fluency and executive communication skills required to succeed in meetings, presentations, interviews and international business environments.
+                  Combining expertise in education, business and engineering, TJ helps professionals, executives and ambitious learners develop the confidence, fluency and executive communication skills required to thrive in meetings, presentations, interviews and international business environments.
                 </p>
 
                 <div className="mt-10 flex flex-wrap gap-3">
