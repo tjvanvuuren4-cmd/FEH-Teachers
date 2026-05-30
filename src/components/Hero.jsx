@@ -166,7 +166,7 @@ backdrop-blur-md
               }}
             />
             <img
-              src="/images/feh-crest.png"
+              src="/images/tj-coach.webp"
               alt="Fluent English Hub"
               style={{
                 width: "600px",
