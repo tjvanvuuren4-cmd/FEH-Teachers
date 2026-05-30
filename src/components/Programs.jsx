@@ -143,14 +143,23 @@ export default function Programs({ whatsappUrl }) {
                 {pkg.ideal}
               </p>
 
-              <div className="mt-8 flex items-end gap-2">
-                <span className="text-5xl font-bold text-white">
-                  {pkg.price}
-                </span>
-                <span className="pb-2 text-base text-slate-400">
-                  {pkg.period}
-                </span>
-              </div>
+              <div className="mt-8">
+  <p
+    className="uppercase text-yellow-300"
+    style={{
+      letterSpacing: "0.15em",
+      fontSize: "12px",
+      fontWeight: 700,
+    }}
+  >
+    Personalised Coaching Programme
+  </p>
+
+  <p className="mt-4 leading-8 text-slate-300">
+    Every coaching journey is tailored to your goals,
+    communication needs, schedule and desired outcomes.
+  </p>
+</div>
 
               <div className="my-8 h-px w-full bg-gradient-to-r from-yellow-500/70 to-transparent" />
 
