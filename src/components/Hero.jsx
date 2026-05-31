@@ -154,14 +154,10 @@ backdrop-blur-md
   ))}
 </div>      
             {/* RIGHT SIDE - TJ PORTRAIT */}
-<div className="relative hidden items-center justify-end lg:flex">
+<div className="relative">
   <img
     src="/images/tj-coach.webp"
-    alt="TJ Van Vuuren"
-    className="relative z-10 h-[620px] w-auto object-cover translate-x-24"
-    style={{
-      filter: "drop-shadow(0 0 25px rgba(0,0,0,0.35))",
-    }}
+    className="rounded-[2rem]"
   />
 
   <div
