@@ -154,21 +154,21 @@ backdrop-blur-md
   ))}
 </div>      
             {/* RIGHT SIDE - TJ PORTRAIT */}
-<div className="relative hidden min-h-[620px] items-end justify-end lg:flex">
+<div className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden w-[52%] lg:block">
   <img
     src="/images/tj-coach.webp"
     alt="TJ Van Vuuren"
-    className="relative z-10 h-[620px] w-auto object-cover"
+    className="absolute bottom-0 right-0 h-[92%] w-auto object-cover"
     style={{
       filter: "drop-shadow(0 0 25px rgba(0,0,0,0.35))",
     }}
   />
 
   <div
-    className="absolute inset-0 z-20 pointer-events-none"
+    className="absolute inset-0"
     style={{
       background:
-        "linear-gradient(to right, #031126 0%, rgba(3,17,38,0.45) 28%, transparent 58%)",
+        "linear-gradient(to right, #031126 0%, rgba(3,17,38,0.6) 25%, transparent 55%)",
     }}
   />
 </div>
