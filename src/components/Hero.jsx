@@ -102,16 +102,19 @@ export default function Hero({ whatsappUrl }) {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="relative hidden items-end justify-end lg:flex">
-        <img
-          src="/images/tj-coach4.webp"
-          alt="TJ Van Vuuren"
-          className="relative z-20 h-[1000px] w-auto object-cover translate-x-4 -translate-y-2"
-          style={{
-          filter: "drop-shadow(0 0 25px rgba(0,0,0,0.25))",
-        }}
-        />
-        </div>
+<div className="relative hidden items-end justify-end lg:flex">
+  <img
+    src="/images/tj-coach5.webp"
+    alt="TJ Van Vuuren"
+    style={{
+      height: "850px",
+      width: "auto",
+      objectFit: "cover",
+      transform: "translateX(-140px) translateY(-30px)",
+      filter: "drop-shadow(0 0 25px rgba(0,0,0,0.25))",
+    }}
+  />
+</div>
       </div>
     </section>
   );
