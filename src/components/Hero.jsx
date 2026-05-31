@@ -158,7 +158,7 @@ backdrop-blur-md
   <img
     src="/images/tj-coach.webp"
     alt="TJ Van Vuuren"
-    className="absolute bottom-0 right-0 z-10 h-[620px] w-auto object-cover"
+    className="relative z-10 h-[620px] w-auto object-cover"
     style={{
       filter: "drop-shadow(0 0 25px rgba(0,0,0,0.35))",
     }}
@@ -168,10 +168,10 @@ backdrop-blur-md
     className="absolute inset-0 z-20 pointer-events-none"
     style={{
       background:
-        "linear-gradient(to right, #031126 0%, transparent 45%)",
+        "linear-gradient(to right, #031126 0%, rgba(3,17,38,0.45) 28%, transparent 58%)",
     }}
   />
-          </div>
+</div>
         </div>
       </div>
     </section>
