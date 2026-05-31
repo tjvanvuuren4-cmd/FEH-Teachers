@@ -152,19 +152,7 @@ backdrop-blur-md
       ✓ {item}
     </div>
   ))}
-</div>
-        </div>
-
-        {/* RIGHT SIDE */}
-        <div className="relative hidden items-center justify-start lg:flex -mt-10 lg:-ml-4">
-          <div className="relative flex items-center justify-center">
-            <div className="absolute -z-10" style={{
-              width: "680px",
-              height: "680px",
-              borderRadius: "9999px",
-              border: "1px solid rgba(250,204,21,0.05)",
-              }}
-            />
+</div>      
             {/* RIGHT SIDE - TJ PORTRAIT */}
 <div className="relative hidden min-h-[620px] items-end justify-end lg:flex">
   <img
@@ -183,7 +171,6 @@ backdrop-blur-md
         "linear-gradient(to right, #031126 0%, transparent 45%)",
     }}
   />
-</div>
           </div>
         </div>
       </div>
