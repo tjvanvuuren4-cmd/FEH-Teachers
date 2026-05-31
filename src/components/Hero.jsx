@@ -154,7 +154,7 @@ backdrop-blur-md
   ))}
 </div>      
             {/* RIGHT SIDE - TJ PORTRAIT */}
-<div className="relative hidden min-h-[620px] items-end justify-end lg:flex">
+<div className="relative hidden items-center justify-end lg:flex">
   <img
     src="/images/tj-coach.webp"
     alt="TJ Van Vuuren"
