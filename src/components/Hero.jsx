@@ -105,7 +105,7 @@ export default function Hero({ whatsappUrl }) {
         <div className="relative hidden items-end justify-end lg:flex">
 
   <img
-    src="/images/tj-coach.webp"
+    src="/images/tj-coach2.webp"
     alt="TJ Van Vuuren"
     className="relative z-20 h-[800px] w-auto object-cover translate-x-8"
     style={{
