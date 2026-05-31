@@ -166,8 +166,7 @@ backdrop-blur-md
               }}
             />
             <div className="absolute inset-y-0 right-0 w-[55%] hidden lg:block">
-
-  <img
+<img
     src="/images/tj-coach.webp"
     alt="TJ Van Vuuren"
     className="absolute right-0 bottom-0"
@@ -183,7 +182,7 @@ backdrop-blur-md
     className="absolute inset-0"
     style={{
       background:
-        "linear-gradient(to left, #031126 0%, transparent 35%)",
+        "linear-gradient(to right, #031126 0%, transparent 45%)",
     }}
   />
 
