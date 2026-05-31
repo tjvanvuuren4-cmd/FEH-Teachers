@@ -160,14 +160,6 @@ backdrop-blur-md
       alt="TJ Van Vuuren"
       className="h-[600px] w-auto"
     />
-
-  <div
-    className="absolute inset-0 z-20 pointer-events-none"
-    style={{
-      background:
-        "linear-gradient(to right, #031126 0%, rgba(3,17,38,0.45) 25%, transparent 55%)",
-    }}
-  />
 </div>
         </div>
       </div>
