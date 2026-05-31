@@ -165,24 +165,29 @@ backdrop-blur-md
               border: "1px solid rgba(250,204,21,0.05)",
               }}
             />
-            <img
-              src="/images/tj-coach.webp"
-              alt="Fluent English Hub"
-              style={{
-                width: "600px",
-                height: "600px",
-                objectFit: "contain",
-                filter: "drop-shadow(0 0 30px rgba(250,204,21,0.16))",
-              }}
-            />
+            <div className="absolute inset-y-0 right-0 w-[55%] hidden lg:block">
 
-            <div
-              className="absolute inset-0 -z-10 rounded-full"
-              style={{
-                background: "rgba(250,204,21,0.04)",
-                filter: "blur(80px)",
-              }}
-            />
+  <img
+    src="/images/tj-coach.webp"
+    alt="TJ Van Vuuren"
+    className="absolute right-0 bottom-0"
+    style={{
+      height: "105%",
+      width: "auto",
+      objectFit: "cover",
+      filter: "drop-shadow(0 0 25px rgba(0,0,0,0.25))",
+    }}
+  />
+
+  <div
+    className="absolute inset-0"
+    style={{
+      background:
+        "linear-gradient(to left, #031126 0%, transparent 35%)",
+    }}
+  />
+
+</div>
           </div>
         </div>
       </div>
