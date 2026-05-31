@@ -13,16 +13,11 @@ export default function Hero({ whatsappUrl }) {
     >
       <div className="absolute inset-0 bg-[#020b18]/55" />
 
-      {/* Luxury light accents */}
-      <div className="absolute left-[38%] top-[22%] h-[420px] w-px rotate-[28deg] bg-gradient-to-b from-transparent via-yellow-400/20 to-transparent" />
-      <div className="absolute left-[48%] top-[38%] h-[320px] w-px rotate-[18deg] bg-gradient-to-b from-transparent via-yellow-400/15 to-transparent" />
-      <div className="absolute left-[56%] top-[45%] h-[260px] w-px rotate-[55deg] bg-gradient-to-b from-transparent via-yellow-400/15 to-transparent" />
-      <div className="absolute left-[43%] top-[28%] h-40 w-40 rounded-full bg-yellow-400/5 blur-[110px]" />
-
       <div className="relative z-10 mx-auto grid min-h-[760px] max-w-[1350px] items-center gap-12 px-6 pb-20 pt-28 lg:grid-cols-2 lg:px-10">
+        
         {/* LEFT SIDE */}
         <div className="max-w-[700px]">
-          <div className="mt-8 mb-8 flex justify-left lg:justify-left lg:pl-0">
+          <div className="mb-8 mt-8 flex justify-left lg:justify-left lg:pl-0">
             <p
               className="inline-flex rounded-full border border-yellow-400/40 bg-[#06152d]/60 px-6 py-4 font-bold uppercase text-yellow-300 backdrop-blur-xl"
               style={{
@@ -45,122 +40,74 @@ export default function Hero({ whatsappUrl }) {
             </span>
           </h1>
 
-          <div className="my-12 h-px -5 bg-gradient-to-r from-yellow-500 via-yellow-200 to-transparent" />
-          <div
-  className="mt-6 uppercase text-yellow-300/80"
-  style={{
-    letterSpacing: "0.22em",
-    fontSize: "13px",
-    fontWeight: 700,
-  }}
->
-  For Professionals • Executives • Global Communicators
-</div>
+          <div className="my-12 h-px bg-gradient-to-r from-yellow-500 via-yellow-200 to-transparent" />
 
-<p
-  className="mt-8 max-w-[520px] font-medium text-slate-100"
-  style={{
-    fontSize: "22px",
-    lineHeight: "2",
-    fontWeight: "500",
-  }}
->
-  Master executive-level English communication for international business,
-leadership presentations, high-stakes interviews and career advancement.
-</p>
+          <div
+            className="mt-6 uppercase text-yellow-300/80"
+            style={{
+              letterSpacing: "0.22em",
+              fontSize: "13px",
+              fontWeight: 700,
+            }}
+          >
+            For Professionals • Executives • Global Communicators
+          </div>
+
+          <p
+            className="mt-8 max-w-[520px] font-medium text-slate-100"
+            style={{
+              fontSize: "22px",
+              lineHeight: "2",
+              fontWeight: "500",
+            }}
+          >
+            Master executive-level English communication for international
+            business, leadership presentations, high-stakes interviews and
+            career advancement.
+          </p>
 
           <div className="mt-10 flex flex-wrap gap-5">
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noreferrer"
-              className="
-rounded-2xl
-border
-border-yellow-400/30
-bg-gradient-to-r
-from-[#0b2148]
-to-[#102f63]
-px-10
-py-5
-font-bold
-uppercase
-tracking-[0.12em]
-text-yellow-300
-shadow-[0_0_25px_rgba(250,204,21,0.15)]
-hover:border-yellow-300
-hover:shadow-[0_0_40px_rgba(250,204,21,0.25)]
-transition-all
-duration-300
-"
+              className="rounded-2xl border border-yellow-400/30 bg-gradient-to-r from-[#0b2148] to-[#102f63] px-10 py-5 font-bold uppercase tracking-[0.12em] text-yellow-300 shadow-[0_0_25px_rgba(250,204,21,0.15)] transition-all duration-300 hover:border-yellow-300 hover:shadow-[0_0_40px_rgba(250,204,21,0.25)]"
             >
-              SCHEDULE A CONSULTATION
+              Schedule A Consultation
             </a>
 
             <a
               href="#assessment"
-              className="
-rounded-2xl
-border
-border-yellow-400/30
-bg-gradient-to-r
-from-[#0b2148]
-to-[#102f63]
-px-10
-py-5
-font-bold
-uppercase
-tracking-[0.12em]
-text-yellow-300
-shadow-[0_0_25px_rgba(250,204,21,0.15)]
-hover:border-yellow-300
-hover:shadow-[0_0_40px_rgba(250,204,21,0.25)]
-transition-all
-duration-300
-"
+              className="rounded-2xl border border-yellow-400/30 bg-gradient-to-r from-[#0b2148] to-[#102f63] px-10 py-5 font-bold uppercase tracking-[0.12em] text-yellow-300 shadow-[0_0_25px_rgba(250,204,21,0.15)] transition-all duration-300 hover:border-yellow-300 hover:shadow-[0_0_40px_rgba(250,204,21,0.25)]"
             >
               Free English Assessment
             </a>
           </div>
 
           <div className="mt-10 flex flex-wrap gap-4">
-  {[
-      "Executive English",
-  "Leadership Skills",
-  "Interview Mastery",
-  "Career Growth",
-  ].map((item) => (
-    <div
-      key={item}
-      className="
-flex
-items-center
-justify-center
-rounded-full
-border
-border-white/10
-bg-[#06152d]/50
-px-4
-py-4
-text-xs
-font-semibold
-uppercase
-tracking-[0.12em]
-backdrop-blur-md
-"
-    >
-      ✓ {item}
-    </div>
-  ))}
-</div>      
-            {/* RIGHT SIDE - TJ PORTRAIT */}
-<div className="flex justify-end">
-    <img
-      src="/images/tj-coach.webp"
-      alt="TJ Van Vuuren"
-      className="h-[600px] w-auto"
-    />
-</div>
+            {[
+              "Executive English",
+              "Leadership Skills",
+              "Interview Mastery",
+              "Career Growth",
+            ].map((item) => (
+              <div
+                key={item}
+                className="flex items-center justify-center rounded-full border border-white/10 bg-[#06152d]/50 px-4 py-4 text-xs font-semibold uppercase tracking-[0.12em] backdrop-blur-md"
+              >
+                ✓ {item}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="relative hidden items-end justify-end lg:flex">
+          <img
+            src="/images/tj-coach.webp"
+            alt="TJ Van Vuuren"
+            className="h-[620px] w-auto object-cover"
+          />
         </div>
       </div>
     </section>
