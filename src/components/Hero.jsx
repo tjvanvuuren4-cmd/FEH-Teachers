@@ -154,11 +154,12 @@ backdrop-blur-md
   ))}
 </div>      
             {/* RIGHT SIDE - TJ PORTRAIT */}
-<div className="relative">
-  <img
-    src="/images/tj-coach.webp"
-    className="rounded-[2rem]"
-  />
+<div className="flex justify-end">
+    <img
+      src="/images/tj-coach.webp"
+      alt="TJ Van Vuuren"
+      className="h-[600px] w-auto"
+    />
 
   <div
     className="absolute inset-0 z-20 pointer-events-none"
