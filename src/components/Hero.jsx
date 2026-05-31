@@ -169,15 +169,14 @@ backdrop-blur-md
 <img
     src="/images/tj-coach.webp"
     alt="TJ Van Vuuren"
-    className="absolute right-0 bottom-0"
+    className="absolute right-0 bottom-0 h-[105%] w-auto object-cover"
     style={{
       height: "105%",
       width: "auto",
       objectFit: "cover",
-      filter: "drop-shadow(0 0 25px rgba(0,0,0,0.25))",
+      filter: "drop-shadow(0 0 25px rgba(0,0,0,0.35))",
     }}
   />
-
   <div
     className="absolute inset-0"
     style={{
