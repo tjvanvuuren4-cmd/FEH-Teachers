@@ -42,7 +42,7 @@ export default function FreeGuide({ formAction, pdfUrl }) {
                   fontSize: "13px",
                 }}
               >
-                Free Resource
+                Free Assessment
               </div>
             </div>
 
@@ -50,9 +50,9 @@ export default function FreeGuide({ formAction, pdfUrl }) {
               className="mt-8 text-5xl font-bold md:text-7xl"
               style={{ fontFamily: "Cinzel, serif" }}
             >
-              Download Your
+              Take Your
               <span className="block bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 bg-clip-text text-transparent">
-                Confidence Guide
+                English Placement Test
               </span>
             </h2>
 
@@ -65,17 +65,17 @@ export default function FreeGuide({ formAction, pdfUrl }) {
                 lineHeight: "1.9",
               }}
             >
-              Discover practical strategies to improve your fluency,
-              confidence, pronunciation and professional communication in
-              business and everyday situations.
+              Complete our professional English Placement Test and
+              receive a personalized assessment of your current level,
+              strengths, development areas and recommended learning path.
             </p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               {[
-                "Speak with more confidence",
-                "Avoid common fluency mistakes",
-                "Improve professional communication",
-                "Build stronger speaking habits",
+                "Identify your English level",
+                "Discover your strengths",
+                "Receive learning recommendations",
+                "Build a personalised study plan",
               ].map((item) => (
                 <div
                   key={item}
@@ -100,7 +100,7 @@ export default function FreeGuide({ formAction, pdfUrl }) {
               className="mb-6 text-3xl font-bold text-yellow-200"
               style={{ fontFamily: "Cinzel, serif" }}
             >
-              Get Your Free Guide
+              Download Placement Test
             </h3>
 
             <form action={formAction} method="POST" className="space-y-5">
@@ -133,7 +133,7 @@ export default function FreeGuide({ formAction, pdfUrl }) {
                 type="submit"
                 className="w-full rounded-2xl border border-yellow-400/20 bg-[#06152d]/90 px-6 py-5 font-bold uppercase tracking-[0.16em] text-yellow-300 transition-all duration-300 hover:border-yellow-300 hover:bg-[#0b2148] hover:shadow-[0_0_40px_rgba(250,204,21,0.15)]"
               >
-                Download Free Guide
+                Get Your Free Assessment
               </button>
             </form>
 

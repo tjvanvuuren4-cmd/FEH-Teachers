@@ -67,12 +67,12 @@ return (
         Programs
       </a>
 
-      <a href="#resources" className="pb-2 text-white/90 transition hover:text-yellow-300">
+      <a href="#testimonials" className="pb-2 text-white/90 transition hover:text-yellow-300">
         Success Stories
       </a>
 
-      <a href="#assessment" className="pb-2 text-white/90 transition hover:text-yellow-300">
-        Resources
+      <a href="#resources" className="pb-2 text-white/90 transition hover:text-yellow-300">
+         Resources
       </a>
     </nav>
 
@@ -80,9 +80,11 @@ return (
     <div className="hidden items-center gap-3 xl:flex">
 
       <a
-        href="#assessment"
+        href="/documents/FEH-English-Placement-Test.pdf"
+        target="_blank"
+        rel="noreferrer"
         className="rounded-xl border border-yellow-400/40 bg-white/5 px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] text-yellow-200 backdrop-blur-md transition-all duration-300 hover:border-yellow-300 hover:bg-yellow-400/10"
-      >
+     >
         Free Assessment
       </a>
 
