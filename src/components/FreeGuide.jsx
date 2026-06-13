@@ -100,7 +100,7 @@ export default function FreeGuide({ formAction, pdfUrl }) {
               className="mb-6 text-3xl font-bold text-yellow-200"
               style={{ fontFamily: "Cinzel, serif" }}
             >
-              Download Placement Test
+              Get Your Free Assessment
             </h3>
 
             <form action={formAction} method="POST" className="space-y-5">
@@ -133,7 +133,7 @@ export default function FreeGuide({ formAction, pdfUrl }) {
                 type="submit"
                 className="w-full rounded-2xl border border-yellow-400/20 bg-[#06152d]/90 px-6 py-5 font-bold uppercase tracking-[0.16em] text-yellow-300 transition-all duration-300 hover:border-yellow-300 hover:bg-[#0b2148] hover:shadow-[0_0_40px_rgba(250,204,21,0.15)]"
               >
-                Get Your Free Assessment
+                Download Placement Test
               </button>
             </form>
 
