@@ -3,132 +3,192 @@ export default function Footer() {
     <footer
       className="relative overflow-hidden text-white"
       style={{
-        backgroundImage: "url('/images/feh-hero-bg.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
+        background:
+          "linear-gradient(90deg, #020b18 0%, #041a30 45%, #061423 100%)",
       }}
     >
-      <div className="absolute inset-0 bg-[#010816]/94" />
+      {/* Background Glow */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(217,154,43,0.08),transparent_35%)]" />
 
-      <div
-        className="absolute left-1/2 top-0 -translate-x-1/2 rounded-full"
-        style={{
-          width: "900px",
-          height: "380px",
-          background: "rgba(250,204,21,0.05)",
-          filter: "blur(150px)",
-        }}
-      />
-
-      <div className="relative z-10 mx-auto max-w-[1350px] px-6 py-20 lg:px-10">
-        <div className="rounded-[2rem] border border-white/10 bg-[#041126]/75 p-10 backdrop-blur-xl lg:p-12">
+      <div className="relative z-10 mx-auto max-w-[1450px] px-8 py-20">
+        <div
+          className="
+            relative
+            overflow-hidden
+            rounded-[2rem]
+            border
+            border-[#d99a2b]/15
+            bg-[#061423]/80
+            p-10
+            backdrop-blur-xl
+            shadow-[0_30px_80px_rgba(0,0,0,0.35)]
+            lg:p-12
+          "
+        >
+          {/* Luxury Top Line */}
           <div
-            className="absolute left-0 top-0 h-px w-full"
+            className="absolute top-0 left-0 h-[2px] w-full"
             style={{
               background:
-                "linear-gradient(90deg, transparent, rgba(250,204,21,0.6), transparent)",
+                "linear-gradient(90deg, transparent, #f4c24f, transparent)",
             }}
           />
 
-          <div className="grid gap-12 md:grid-cols-4">
+          {/* Glow */}
+          <div
+            className="pointer-events-none absolute inset-0 opacity-50"
+            style={{
+              background:
+                "radial-gradient(circle at top center, rgba(244,194,79,0.10), transparent 60%)",
+            }}
+          />
+
+          <div className="relative z-10 grid gap-12 md:grid-cols-4">
+            {/* BRAND */}
             <div className="md:col-span-2">
               <div className="flex items-center gap-5">
                 <img
                   src="/images/feh-crest.png"
                   alt="Fluent English Hub"
                   style={{
-                    width: "82px",
-                    height: "82px",
+                    width: "85px",
+                    height: "85px",
                     objectFit: "contain",
-                    filter: "drop-shadow(0 0 18px rgba(250,204,21,0.25))",
+                    filter:
+                      "drop-shadow(0 0 18px rgba(244,194,79,0.25))",
                   }}
                 />
 
                 <div>
                   <h3
-                    className="font-bold text-yellow-400"
                     style={{
                       fontFamily: "Cinzel, serif",
                       fontSize: "34px",
-                      letterSpacing: "0.04em",
                       lineHeight: 1,
+                      color: "#f4c24f",
                     }}
                   >
                     Fluent English Hub
                   </h3>
 
                   <p
-                    className="mt-2 uppercase text-yellow-200"
+                    className="mt-2 uppercase"
                     style={{
-                      fontSize: "13px",
+                      fontSize: "12px",
                       letterSpacing: "0.22em",
                       fontWeight: 700,
+                      color: "#f4c24f",
                     }}
                   >
-                    Speak With Confidence
+                    Communication Excellence
                   </p>
                 </div>
               </div>
 
-              <p
-                className="mt-8 max-w-2xl text-slate-300"
-                style={{
-                  fontSize: "17px",
-                  lineHeight: "1.9",
-                }}
-              >
-                Premium English coaching for professionals, executives,
-                students and ambitious learners who want confidence, fluency
-                and international communication success.
+              <p className="mt-8 max-w-2xl text-[17px] leading-8 text-slate-300">
+                Helping professionals, business teams and ambitious
+                learners improve communication, strengthen relationships
+                and achieve measurable results through personalised
+                English coaching.
               </p>
             </div>
 
+            {/* QUICK LINKS */}
             <div>
-              <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.22em] text-yellow-300">
+              <h4
+                className="mb-6 uppercase"
+                style={{
+                  color: "#f4c24f",
+                  letterSpacing: "0.22em",
+                  fontSize: "12px",
+                  fontWeight: 700,
+                }}
+              >
                 Quick Links
               </h4>
 
               <div className="space-y-4 text-slate-300">
-                <a href="#guide" className="block transition hover:text-yellow-300">
+                <a
+                  href="#home"
+                  className="block transition hover:text-[#f4c24f]"
+                >
                   Home
                 </a>
 
-                <a href="#journey" className="block transition hover:text-yellow-300">
-                  Journey
+                <a
+                  href="#about"
+                  className="block transition hover:text-[#f4c24f]"
+                >
+                  About
                 </a>
 
-                <a href="#programs" className="block transition hover:text-yellow-300">
-                  Programs
+                <a
+                  href="#services"
+                  className="block transition hover:text-[#f4c24f]"
+                >
+                  Services
                 </a>
 
-                <a href="#assessment" className="block transition hover:text-yellow-300">
-                  Free Guide
+                <a
+                  href="#resources"
+                  className="block transition hover:text-[#f4c24f]"
+                >
+                  Resources
+                </a>
+
+                <a
+                  href="#contact"
+                  className="block transition hover:text-[#f4c24f]"
+                >
+                  Contact
                 </a>
               </div>
             </div>
 
+            {/* CONTACT */}
             <div>
-              <h4 className="mb-6 text-sm font-bold uppercase tracking-[0.22em] text-yellow-300">
+              <h4
+                className="mb-6 uppercase"
+                style={{
+                  color: "#f4c24f",
+                  letterSpacing: "0.22em",
+                  fontSize: "12px",
+                  fontWeight: 700,
+                }}
+              >
                 Contact
               </h4>
 
               <div className="space-y-4 text-slate-300">
+                <p>Business & Executive English Coaching</p>
+                <p>Online Worldwide</p>
                 <p>info@fluentenglishhub.com</p>
                 <p>+27 71 792 6489</p>
-                <p>Online Worldwide</p>
               </div>
             </div>
           </div>
 
-          <div className="mt-12 h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent" />
+          <div
+            className="mt-12"
+            style={{
+              height: "1px",
+              background:
+                "linear-gradient(90deg, transparent, rgba(244,194,79,0.4), transparent)",
+            }}
+          />
 
-          <div className="mt-8 flex flex-col gap-4 text-center text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
-            <p>© 2026 Fluent English Hub. All Rights Reserved.</p>
+          <div className="mt-8 flex flex-col gap-4 text-center text-sm md:flex-row md:items-center md:justify-between">
+            <p className="text-slate-400">
+              © 2026 Fluent English Hub. All Rights Reserved.
+            </p>
 
-            <p className="font-semibold text-yellow-300">
-              Speak English. Lead The World.
+            <p
+              style={{
+                color: "#f4c24f",
+                fontWeight: 600,
+              }}
+            >
+              Communicate With Confidence. Make Your Mark.
             </p>
           </div>
         </div>

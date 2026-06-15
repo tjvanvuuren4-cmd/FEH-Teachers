@@ -8,50 +8,8 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: Inter, Arial, sans-serif;
-  background:
-    radial-gradient(circle at 80% 20%, rgba(251, 191, 36, 0.16), transparent 28%),
-    radial-gradient(circle at 15% 85%, rgba(30, 64, 175, 0.35), transparent 32%),
-    linear-gradient(135deg, #020b18 0%, #06152d 42%, #0b1f4d 100%);
-  color: #eef2ff;
-  background-attachment: fixed;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.08;
-  background-image:
-    linear-gradient(to right, #ffffff 1px, transparent 1px),
-    linear-gradient(to bottom, #ffffff 1px, transparent 1px);
-  background-size: 72px 72px;
-  z-index: -1;
-}
-
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(120deg, transparent 15%, rgba(251, 191, 36, 0.08) 45%, transparent 70%);
-  z-index: -1;
-}
-
-.section-accent-line {
-  position: relative;
-}
-
-.section-accent-line::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1rem;
-  width: 5rem;
-  height: 3px;
-  border-radius: 9999px;
-  background: linear-gradient(90deg, #fbbf24, #fde68a, transparent);
+  background: #020b18;
+  color: #0f172a;
 }
 
 * {

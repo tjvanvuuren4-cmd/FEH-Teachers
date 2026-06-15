@@ -19,61 +19,58 @@ export default function Stats() {
   ];
 
   return (
-        <section
-  className="relative -mt-2 text-white"
-  style={{
-    backgroundImage: "url('/images/feh-hero-bg.webp')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundAttachment: "fixed",
-  }}
->
-      <div className="mx-auto max-w-[1350px] px-6 py-14 lg:px-10">
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          {stats.map((item) => (
+    <section
+      className="relative overflow-hidden"
+      style={{
+        background:
+          "linear-gradient(90deg, #020b18 0%, #041a30 45%, #061423 100%)",
+      }}
+    >
+      {/* Gold divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[#d99a2b]/50 to-transparent" />
+
+      <div className="mx-auto max-w-[1400px] px-8 py-16">
+        <div className="grid grid-cols-2 md:grid-cols-4">
+          {stats.map((item, index) => (
             <div
               key={item.label}
-              className="
-                rounded-[1.5rem]
-                border
-                border-white/10
-                bg-[#06152d]/60
-                px-6
-                py-6
+              className={`
                 text-center
-                backdrop-blur-xl
-                transition-all
-                duration-300
-                hover:border-yellow-400/20
-                hover:bg-[#06152d]/80
-                hover:-translate-y-1
-              "
+                px-8
+                ${index !== stats.length - 1 ? "md:border-r md:border-[#d99a2b]/15" : ""}
+              `}
             >
-              <div
-                className="font-bold text-yellow-300"
+              <h3
                 style={{
                   fontFamily: "Cinzel, serif",
-                  fontSize: "34px",
-                  lineHeight: 1,
+                  color: "#f4c24f",
+                  fontSize: "48px",
+                  fontWeight: "700",
+                  textShadow:
+                    "0 0 12px rgba(244,194,79,0.15)",
                 }}
               >
                 {item.number}
-              </div>
+              </h3>
 
-              <div
-                className="mt-3 uppercase text-slate-300"
+              <p
+                className="mt-3 uppercase"
                 style={{
+                  color: "#d6dde8",
                   fontSize: "11px",
-                  letterSpacing: "0.18em",
-                  fontWeight: 700,
+                  letterSpacing: "0.22em",
+                  fontWeight: "600",
                 }}
               >
                 {item.label}
-              </div>
+              </p>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Gold divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-[#d99a2b]/50 to-transparent" />
     </section>
   );
 }

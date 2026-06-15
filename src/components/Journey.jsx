@@ -1,114 +1,140 @@
 const steps = [
   {
     number: "01",
-    title: "Executive Assessment",
-    text: "Discover your current communication strengths, confidence level and growth opportunities through a professional English evaluation designed for ambitious professionals.",
+    title: "Assess",
+    text: "We evaluate your current communication skills, confidence level, strengths and development areas through a professional English assessment.",
   },
   {
     number: "02",
-    title: "Strategy Consultation",
-    text: "Meet one-on-one with your coach to identify career goals, communication challenges and the exact outcomes you want to achieve in business and life.",
+    title: "Measure",
+    text: "We identify your goals, communication challenges and the practical business outcomes you want to improve.",
   },
   {
     number: "03",
-    title: "Transformation Roadmap",
-    text: "Receive a personalised coaching strategy focused on fluency, executive presence, leadership communication and long-term professional success.",
+    title: "Coach",
+    text: "You receive targeted coaching focused on clarity, confidence, meetings, emails, presentations and professional communication.",
+  },
+  {
+    number: "04",
+    title: "Improve",
+    text: "You apply new communication skills in real situations and build measurable confidence over time.",
+  },
+  {
+    number: "05",
+    title: "Report",
+    text: "We provide feedback and progress insights so you can clearly see your development and next steps.",
   },
 ];
 
 export default function Journey() {
   return (
     <section
-      id="journey"
+      id="process"
       className="relative overflow-hidden text-white"
       style={{
-        backgroundImage: "url('/images/feh-hero-bg.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
+        background:
+          "linear-gradient(90deg, #020b18 0%, #041a30 45%, #061423 100%)",
       }}
     >
-      <div className="absolute inset-0 bg-[#020b18]/80" />
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#010913] to-transparent" />
+      {/* soft gold glow */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(217,154,43,0.10),transparent_35%)]" />
 
-      <div className="relative z-10 mx-auto max-w-[1350px] px-6 pb-28 pt-16 lg:px-10">
-        <div className="mb-14 text-center">
-          <div className="flex justify-center">
-            <div
-              className="inline-flex rounded-full border border-yellow-400/40 bg-[#06152d]/60 px-8 py-4 font-bold uppercase text-yellow-300 backdrop-blur-xl"
-              style={{ letterSpacing: "0.20em", fontSize: "13px" }}
+      <div className="mx-auto max-w-[1450px] px-8 py-24">
+        <div className="grid gap-12 lg:grid-cols-[0.28fr_1fr] lg:items-center">
+          {/* LEFT INTRO */}
+          <div>
+            <p
+              className="uppercase"
+              style={{
+                color: "#f4c24f",
+                letterSpacing: "0.25em",
+                fontSize: "12px",
+                fontWeight: 700,
+              }}
             >
-              Client Journey
-            </div>
+              Our Proven
+            </p>
+
+            <h2 className="mt-4 text-4xl font-extrabold leading-tight md:text-5xl">
+              5-Step{" "}
+              <span
+                style={{
+                  color: "#f4c24f",
+                  textShadow:
+                    "0 0 12px rgba(244,194,79,0.22)",
+                }}
+              >
+                Process
+              </span>
+            </h2>
+
+            <div
+              className="mt-6"
+              style={{
+                width: "100px",
+                height: "2px",
+                background:
+                  "linear-gradient(90deg,#f4c24f,#d99a2b,transparent)",
+              }}
+            />
+
+            <p className="mt-6 max-w-[360px] text-[18px] leading-8 text-slate-300">
+              We measure, coach and report to ensure real communication
+              improvement for professionals and businesses.
+            </p>
           </div>
 
-          <h2
-            className="mt-8 text-5xl font-bold md:text-7xl"
-            style={{ fontFamily: "Cinzel, serif" }}
-          >
-            The FEH
-            <span className="block bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 bg-clip-text text-transparent">
-              Executive Method
-            </span>
-          </h2>
-
-          <div className="mx-auto mt-8 h-px w-56 bg-gradient-to-r from-transparent via-yellow-500 to-transparent" />
-
-          <p
-            className="mx-auto mt-8 max-w-4xl text-slate-200"
-            style={{ fontSize: "22px", lineHeight: "1.9" }}
-          >
-            A proven executive coaching framework designed to help ambitious
-            professionals communicate with confidence, influence and authority
-            in business, interviews and leadership environments.
-          </p>
-        </div>
-
-        <div className="grid gap-8 lg:grid-cols-3">
-          {steps.map((step) => (
-            <div
-              key={step.number}
-              className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#041126]/75 p-12 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-yellow-400/20 hover:shadow-[0_0_50px_rgba(250,204,21,0.08)]"
-            >
+          {/* STEPS */}
+          <div className="grid gap-6 md:grid-cols-5">
+            {steps.map((step, index) => (
               <div
-                className="absolute top-0 left-0 h-px w-full"
-                style={{
-                  background:
-                    "linear-gradient(90deg, transparent, rgba(250,204,21,0.6), transparent)",
-                }}
-              />
+                key={step.number}
+                className="group relative overflow-hidden rounded-2xl border border-[#d99a2b]/15 bg-[#061423]/80 p-6 text-center backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-[#f4c24f]/40 hover:shadow-[0_0_28px_rgba(244,194,79,0.10)]"
+              >
+                <div
+                  className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+                  style={{
+                    background:
+                      "radial-gradient(circle at top, rgba(244,194,79,0.10), transparent 60%)",
+                  }}
+                />
 
-              <div className="relative z-10">
-                <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-yellow-400/20 bg-[#020b18]/80 text-xl font-bold text-yellow-300">
-                  {step.number}
+                <div className="relative z-10">
+                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-[#d99a2b] to-[#f2bd55] text-lg font-extrabold text-[#020b18]">
+                    {step.number}
+                  </div>
+
+                  <h3
+                    className="mt-6 text-lg font-extrabold uppercase"
+                    style={{ color: "#f4c24f" }}
+                  >
+                    {step.title}
+                  </h3>
+
+                  <p className="mt-4 text-sm leading-7 text-slate-300">
+                    {step.text}
+                  </p>
                 </div>
 
-                <h3
-                  className="mt-8 text-3xl font-bold text-yellow-200"
-                  style={{ fontFamily: "Cinzel, serif" }}
-                >
-                  {step.title}
-                </h3>
-
-                <p className="mt-6 leading-8 text-slate-300">{step.text}</p>
-
-                <div className="mt-8 h-px w-20 bg-gradient-to-r from-yellow-500 to-transparent transition-all duration-500 group-hover:w-36" />
+                {index !== steps.length - 1 && (
+                  <div className="absolute right-[-18px] top-1/2 hidden h-px w-9 bg-[#d99a2b]/40 md:block" />
+                )}
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        <div className="mt-20 text-center">
+        <div className="mt-16 text-center">
           <p
-            className="uppercase text-yellow-300/80"
+            className="uppercase"
             style={{
-              letterSpacing: "0.30em",
-              fontSize: "13px",
+              color: "#f4c24f",
+              letterSpacing: "0.28em",
+              fontSize: "12px",
               fontWeight: 700,
             }}
           >
-            CLARITY • STRATEGY • TRANSFORMATION
+            Assess • Measure • Coach • Improve • Report
           </p>
         </div>
       </div>

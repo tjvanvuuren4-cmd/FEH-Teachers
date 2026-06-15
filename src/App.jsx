@@ -3,9 +3,10 @@ import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import Journey from "./components/Journey";
 import CoachingTeam from "./components/CoachingTeam";
+import TestimonialsImpact from "./components/TestimonialsImpact";
 import Programs from "./components/Programs";
+import Businesses from "./components/Businesses";
 import FreeGuide from "./components/FreeGuide";
-import Testimonials from "./components/Testimonials";
 import ContactCTA from "./components/ContactCTA";
 import Footer from "./components/Footer";
 import Resources from "./components/Resources";
@@ -31,10 +32,11 @@ return (
     <Stats />
     <Journey />
     <CoachingTeam />
+    <TestimonialsImpact />
+    <Businesses whatsappUrl={whatsappUrl} />
     <Programs whatsappUrl={whatsappUrl} />
     <Resources />
     <FreeGuide formAction={formAction} pdfUrl={pdfUrl} />
-    <Testimonials />
     <ContactCTA whatsappUrl={whatsappUrl} />
     <Footer />
   </>
